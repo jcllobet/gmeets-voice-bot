@@ -1,0 +1,54 @@
+{
+    "name": "Toni's Assistant",
+    "firstMessage": "__DYNAMIC_FIRST_MESSAGE__",
+    "firstMessageMode": "assistant-speaks-first",
+    "silenceTimeoutSeconds": 30,
+    "maxDurationSeconds": 1500,
+    "backgroundSound": "off",
+    "backchannelingEnabled": false,
+    "backgroundDenoisingEnabled": true,
+    "transcriber": {
+      "provider": "deepgram",
+      "endpointing": 20,
+      "language": "en",
+      "model": "nova-2-meeting"
+    },
+    "model": {
+      "provider": "openai",
+      "model": "gpt-4.1-mini",
+      "messages": [
+        {
+          "role": "system",
+          "content": "__DYNAMIC_SYSTEM_PROMPT__"
+        }
+      ],
+      "emotionRecognitionEnabled": false,
+      "fallbackModels": ["gpt-4.1"],
+      "temperature": 0.3
+    },
+    "voice": {
+      "provider": "cartesia",
+      "language": "en",
+      "model": "sonic-preview",
+      "voiceId": "565510e8-6b45-45de-8758-13588fbaec73"
+    },
+    "startSpeakingPlan": {
+      "waitSeconds": 0.4,
+      "smartEndpointingEnabled": false,
+      "transcriptionEndpointingPlan": {
+        "onPunctuationSeconds": 0.8,
+        "onNoPunctuationSeconds": 1.5,
+        "onNumberSeconds": 1
+      }
+    },
+    "stopSpeakingPlan": {
+      "numWords": 0,
+      "voiceSeconds": 0.2,
+      "backoffSeconds": 1.5
+    },
+    "monitorPlan": {
+      "listenEnabled": true,
+      "controlEnabled": true
+    }
+  }
+  

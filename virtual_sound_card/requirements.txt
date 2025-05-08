@@ -1,0 +1,9 @@
+daily
+numpy
+pyaudio
+pyvirtualcam
+python-dotenv
+requests
+scipy
+sounddevice
+vapi_python 

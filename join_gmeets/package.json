@@ -1,0 +1,30 @@
+{
+  "name": "gmeets-joiner",
+  "version": "1.0.0",
+  "description": "[Link](https://chatgpt.com/share/6802e1a1-c484-8004-8ef9-ed381055aad0)",
+  "main": "join_meeting.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node join_meeting.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcllobet/gmeets-joiner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcllobet/gmeets-joiner/issues"
+  },
+  "homepage": "https://github.com/jcllobet/gmeets-joiner#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "patchright": "^1.52.0",
+    "playwright-extra": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
